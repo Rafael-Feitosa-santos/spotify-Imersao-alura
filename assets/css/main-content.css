@@ -1,0 +1,358 @@
+.main-container {
+    max-width: 80vw;
+    height: 100vh;
+    margin-left: 35rem;
+    margin-right: 1rem;
+}
+
+.header_navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.6rem;
+    margin: 1rem;
+    border-radius: .8rem;
+    background-color: var(--background-nav);
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.arrow-left {
+    margin-right: 2rem;
+}
+
+.arrow-right,
+.arrow-left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3.2rem;
+    height: 3.2rem;
+    background: var(--bg-icon);
+    background-color: var(--bg-arrow-color);
+    border-radius: 50%;
+    border: none;
+}
+
+.header_login {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.header_search {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 4.8rem;
+    margin-left: 1.9rem;
+    background-color: var(--color-cinza-claro);
+    border-radius: 50rem;
+    border: 1px solid transparent;
+    padding: 0 2rem;
+}
+
+.header_search:hover {
+    border: 1px solid var(--color-branco);
+
+}
+
+.header_search img {
+    width: 1.6rem;
+    height: 1.6rem;
+    margin-left: 1rem;
+}
+
+.header_search input {
+    background: transparent;
+    border: none;
+    padding: 0 1rem;
+    color: var(--color-branco);
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    outline: none;
+}
+
+.btn_subscribe {
+    color: var(--color-btn-inscreva);
+    text-decoration: none;
+    font-size: 1.6rem;
+    font-weight: 700;
+    background-color: transparent;
+    margin-right: 3.2rem;
+}
+
+.btn_subscribe:hover {
+    transform: scale(1.04);
+    transition: .1s ease-in-out;
+    color: var(--color-branco);
+}
+
+.btn_login {
+    color: var(--background);
+    font-size: 1.6rem;
+    background: var(--color-branco);
+    padding: 1.5rem 3rem;
+    border-radius: 4rem;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.btn_login:hover {
+    transform: scale(1.04);
+    transition: .1s ease-in-out;
+}
+
+.playlist-container {
+    height: 68vh;
+    padding-top: 1.6rem;
+    margin: 1rem;
+    border-radius: 10px;
+    background-color: var(--background-nav);
+}
+
+.playlist {
+    margin: 2.4rem;
+}
+
+.playlist #greeting {
+    color: var(--color-branco);
+    font-size: 3.2rem;
+    font-weight: 700;
+    margin-bottom: 4.8rem;
+}
+
+.playlist .session {
+    color: var(--color-branco);
+    font-size: 2.4rem;
+    font-weight: 700;
+}
+
+/* scroll */
+.offer_scroll-container {
+    max-height: 43vh;
+    margin: 3rem;
+    overflow-y: auto;
+}
+
+.offer_scroll-container::-webkit-scrollbar {
+    width: 1rem;
+}
+
+.offer_scroll-container::-webkit-scrollbar-thumb {
+    background-color: transparent;
+}
+
+/* fim do scroll */
+
+.offer_list-item {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 3.2rem;
+    margin-bottom: 1rem;
+}
+
+
+.cards {
+    position: relative;
+    /* Largura card */
+    width: 100%;
+    /* Altura do card */
+    height: 25vh;
+    overflow: hidden;
+    border-radius: .8rem;
+}
+
+.cards h3 {
+    padding: 1.6rem;
+    position: absolute;
+    color: var(--color-branco);
+    font-size: 2.4rem;
+    font-weight: 700;
+}
+
+.card1 {
+    background-color: var(--card1);
+}
+
+.card2 {
+    background-color: var(--card2);
+}
+
+.card3 {
+    background: var(--card3);
+}
+
+.card4 {
+    background: var(--card4);
+}
+
+.card5 {
+    background: var(--card5);
+}
+
+.card6 {
+    background: var(--card6);
+}
+
+.card7 {
+    background: var(--card7);
+}
+
+.card8 {
+    background: var(--card8);
+}
+
+.card9 {
+    background: var(--card9);
+}
+
+.card10 {
+    background: var(--card10);
+}
+
+.card11 {
+    background: var(--card11);
+}
+
+.card12 {
+    background: var(--card12);
+}
+
+.card13 {
+    background: var(--card13);
+}
+
+.card14 {
+    background: var(--card14);
+}
+
+.card15 {
+    background: var(--card15);
+}
+
+.offer_list-item img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: auto;
+    width: 12rem;
+    transform: rotate(25deg) translate(18%, -2%);
+}
+
+/* card Artista */
+.artist {
+    --column-count: 5;
+    --grid-gap: 24px;
+    --min-container-width: 2.4rem;
+}
+
+.hidden {
+    display: none;
+}
+
+.grid-container {
+    grid-gap: var(--grid-gap);
+    display: grid;
+    grid-template-columns: repeat(var(--column-count), minmax(0, 1fr));
+    min-width: var(--min-container-width);
+}
+
+
+.artist-card {
+    background: #181818;
+    border-radius: .8rem;
+    -ms-flex: 1;
+    flex: 1;
+    isolation: isolate;
+    padding: 1.6rem;
+    position: relative;
+    transition: background-color 0.3s ease;
+    width: 20%;
+}
+
+.artist-card:hover {
+    background-color: #252525;
+}
+
+.card-img {
+    padding-bottom: 100%;
+    position: relative;
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+.artist-img {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    border-radius: 50%;
+}
+
+.card-text {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    min-height: 6.2rem;
+}
+
+.card-text a {
+    display: inline-block;
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+.artist-name {
+    box-sizing: border-box;
+    margin-block: 0px;
+    font-size: 1.6re,;
+    font-weight: 700;
+    padding-block-end: 8px;
+}
+
+.artist-categorie {
+    color: #6a6a6a;
+    font-weight: 400;
+    font-size: 1.4rem;
+}
+
+.play {
+    position: relative;
+}
+
+.play .fa-play {
+    position: absolute;
+    right: 1rem;
+    top: 12rem;
+    padding: 1.8rem;
+    background-color: #1db954;
+    border-radius: 100%;
+    font-size: 14px;
+    opacity: 0;
+    transition: all ease 0.4s;
+}
+
+.artist-card:hover .play .fa-play {
+    opacity: 1;
+    transform: translateY(-20px);
+}
+
+.play .fa-play:hover {
+    padding: 2rem;
+    cursor: pointer;
+}
+
+#result-artist {
+    padding: 2rem 4rem;
+}

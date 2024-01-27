@@ -1,0 +1,45 @@
+.rodape {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--bg-footer-degrade);
+    padding: 2rem 4rem;
+    margin: .8rem;
+}
+
+
+.rodape_titulo {
+    color: var(--color-branco);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+.rodape_texto {
+    color: var(--color-branco);
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+.btn_footer a {
+    display: flex;
+    justify-content: center;
+    background-color: var(--color-branco);
+    color: var(--background);
+    font-size: 1.6rem;
+    font-weight: bold;
+    padding: 1.4rem 3rem;
+    border: 0;
+    border-radius: 4rem;
+    text-decoration: none;
+    align-items: center;
+}
+
+.btn_footer a:hover {
+    transform: scale(1.04);
+    transition: .1s ease-in-out;
+}
